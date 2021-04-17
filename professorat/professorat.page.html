@@ -1,0 +1,25 @@
+<ion-toolbar>
+  <ion-title id="toolbar-title">
+    Detalls del professorat
+  </ion-title>
+  <ion-buttons slot=start  color=" white"> 
+    <ion-back-button defaultHref="assignatures"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content class="ion-padding">
+  <h2 id="nom"> <b> {{professorat.nom}} </b></h2>
+  <img id="img" [src]="'/assets/mockdata/'+professorat.img+'.png'">
+  <div id="info">
+    <p><b>Adreça de correu: </b></p>
+    <a id="mail" href="mailto:{{professorat.mail}}"><u>{{professorat.mail}}</u></a>
+    <p><b>Despatx: </b></p>
+    <p id="x">{{professorat.despatx}}</p>
+    <p><b>Horaris de consulta: </b></p>
+    <ion-item *ngFor= "let horari of professorat.consultes"> 
+      <p id="x">{{horari}} </p>
+    </ion-item>
+  </div>
+
+  <div id="boto"><ion-button routerLink="/consulta" size="large" color="medium"> Demanar consulta </ion-button> </div>
+</ion-content>
