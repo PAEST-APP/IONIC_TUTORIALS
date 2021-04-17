@@ -1,0 +1,34 @@
+<ion-toolbar>
+  <ion-title id="toolbar-title">
+    Consulta
+  </ion-title>
+  <ion-buttons slot=start  color=" white"> 
+    <ion-back-button defaultHref="professorat/1"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+
+
+<ion-content class="ion-padding">
+  <h2 id="nom"> <b> {{professorat.nom}} </b></h2>
+  <div id="info">
+    <p><b>Horaris de consulta: </b></p>
+    <ion-item *ngFor= "let horari of professorat.consultes"> 
+      <p id="x">{{horari}} </p>
+    </ion-item>
+  </div>
+
+
+  <ion-item id="seleccio">
+    <ion-select interface="popover" id="dia"  [(ngModel)]="diaSeleccionat" (ngModelChange)="seleccio(diaSeleccionat)">
+      <ion-select-option *ngFor="let dia of horarisConsulta.consultes" value="{{dia[0]}}">{{dia[0]}}</ion-select-option>
+    </ion-select>
+
+    <ion-select interface="popover" id="hora"  [(ngModel)]="horaSeleccionada">
+      <ion-select-option *ngFor="let horari of horesLliures" value="{{horari}}">{{horari}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div id="boto"><ion-button color="medium" size="large"  (click)="clicked()"> Sol.licitar consulta </ion-button></div>
+</ion-content>
+
+
