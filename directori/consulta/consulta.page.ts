@@ -65,15 +65,16 @@ export class ConsultaPage implements OnInit {
     };
     let body=JSON.stringify(data);
 
-    /*this.http.post(url, body, { ...options, responseType: 'text' }).subscribe( //el response type avisa que la resposta que s'espera no és un json sinó un string
+    this.http.post(url, body, { ...options, responseType: 'text' }).subscribe( //el response type avisa que la resposta que s'espera no és un json sinó un string
       (response: any) => {
         console.log(response)
-        this.responseAlert(response)}, 
+        //this.responseAlert(response)}, 
+        this.responseAlert("S'ha sol·licitat consulta per al "+this.diaSeleccionat+" a les "+this.horaSeleccionada+". Comprova el teu correu electrònic.")}, 
       (error: any) => {
         console.log(error)}
-    );*/
+    );
 
-     this.responseAlert("S'ha sol.licitat la consulta correctament, comprova el teu correu electrònic."); 
+     //this.responseAlert("S'ha sol·licitat consulta per al "+this.diaSeleccionat+" a les "+this.horaSeleccionada+". Comprova el teu correu electrònic."); 
   }
 
 
