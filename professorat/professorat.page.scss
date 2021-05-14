@@ -1,0 +1,71 @@
+
+ion-toolbar{ // a global.scss hi ha el color del back-button
+    --background: #007bbf;
+    color: #fff;
+    text-align: auto;
+    position: relative;
+    #toolbar-title{
+      //font-size: 20px;
+    }
+  }
+  
+  ion-content{
+    --background: #f5f6f9;
+  }
+
+  #nom{
+    background-color: #fff;
+    margin-top:0;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    padding: 15px 15px 15px;
+  }
+
+  img{
+    height: 25vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px 15px;
+    border-radius: 50%;
+  }
+  
+  #info{
+    background-color: #fff;
+    margin-top:0;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    font-weight: 300;
+    position: relative;
+    padding: 1px 15px 15px;
+
+    #x{
+        text-align: center;
+        color: #383a3e;
+        font-size: 20px; //afegit ara per augmentar mida font
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #mail{
+        color:  #6370ff;
+        text-align: center; //afegit ara per centrar el mail
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
+
+#boto{
+  margin-top: 15px;
+  text-align: center;
+}
