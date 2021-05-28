@@ -1,0 +1,62 @@
+
+ion-toolbar{
+    --background: #007bbf;
+    color: #fff;
+    text-align: auto;
+    position: relative;
+    #toolbar-title{
+      //font-size: 20px;
+    }
+  }
+
+
+  ion-content{
+    --background: #f5f6f9;
+  }
+
+  #nom{
+    background-color: #fff;
+    margin-top:0;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    padding: 15px 15px 15px;
+  }
+  
+  #info{
+    background-color: #fff;
+    margin-top:0;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    font-weight: 300;
+    position: relative;
+    padding: 1px 15px 15px;
+
+    #x{
+        text-align: center;
+        color: #383a3e;
+        font-size: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  }
+#seleccio{  
+  padding: 15px 0px 15px;
+  #dia{ 
+    min-width: 70% !important; //a global.scss afegit per modificar la width de les opcions
+  }
+  #hora{
+    margin-left: auto; 
+  }
+}
+
+#boto{
+  text-align: center;
+}
